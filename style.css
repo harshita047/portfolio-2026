@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
@@ -59,15 +63,28 @@ nav ul{
   
 }
 
-nav ul li{
+nav ul li a{
   cursor: pointer;
   padding: 2rem;
   font-size: 0.8rem;
   color: darkslategray;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
   color: black;
+}
+
+#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  nav ul{
+    display: none;
+  }
+  #hamburger{
+    display: block;
+  }
 }
 
 nav a{
@@ -486,4 +503,8 @@ footer a{
 footer i:hover{
   transform: scale(1.5);
   transition: all 0.2s ease-in-out;
+}
+
+#main, #about, #skills, #projects, #contact{
+  scroll-margin-top: 90px;
 }
