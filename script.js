@@ -1,2 +1,8 @@
 const hamburger = document.querySelector("#hamburger");
-const nav_links = document.querySelector("nav ul");
+const navLinks = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+  hamburger.classList.toggle("fa-bars");
+  hamburger.classList.toggle("fa-xmark");
+})
