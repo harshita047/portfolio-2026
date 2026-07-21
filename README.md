@@ -1,7 +1,7 @@
 # 🌐 Harshita's Portfolio
 A personal portfolio website built with HTML, CSS, and JavaScript — showcasing my projects, skills, and contact information.
 
-🔗 **Live Site:** [[harshita047.github.io/porfolio-2026](https://harshita047.github.io/porfolio-2026)](https://porfolio-2026-omega.vercel.app/)
+🔗 **Live Site:**  https://porfolio-2026-omega.vercel.app
 
 ## 🛠️ Built With
 - HTML5
