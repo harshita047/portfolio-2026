@@ -141,25 +141,33 @@ nav a{
   height: 1.8rem;
   background-color: var(--bg);
   color: var(--text);
-  border: 1px solid var(--border);
+  border: none;
+  border: 1px solid #f5e9eb;
   border-radius: 0.3rem;
   /* margin-right: 1rem; */
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 nav button i{
-  color: #6c63ff;
+  color: black;
 }
 
-nav button:active{
-  border: 1px solid var(--text-muted);
-  background-color: var(--border);
+nav button:hover{
+  transform: scale(1.1);
+  background-color: #f5e9eb;
+}
+
+nav>button:active{
+  /* border: 1px solid var(--text-muted); */
+  background-color: #f5e9eb;
   color: var(--text);
   transform: scale(0.9);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .color_mode{
@@ -169,6 +177,12 @@ nav button:active{
   font-size: 1.2rem;
   cursor: pointer;
   background-color: var(--portion-bg);
+}
+
+.color_mode:hover{
+  border: none;
+  background-color: var(--portion-bg);
+  transform: scale(1.1);
 }
 
 .color_mode:active{
@@ -243,7 +257,7 @@ main h1{
   height: 1.8rem;
   color: var(--text);
   background-color: var(--bg);
-  border: 1px solid var(--border);
+  border: 1px solid #f5e9eb;
   border-radius: 0.3rem;
   margin: 0.5rem;
   display: flex;
@@ -253,18 +267,23 @@ main h1{
   font-weight: bold;
 }
 
+.hero-btns button:hover{
+  transform: scale(1.1);
+  background-color: #f5e9eb;
+}
+
 .hero-btns button:active{
-  border: 1px solid var(--text-muted);
-  background-color: var(--border);
+  /* border: 1px solid var(--text-muted); */
+  background-color: #f5e9eb;
   color: var(--text);
-  transition: all 0.2s ease-in-out;
   transform: scale(0.9);
+  transition: all 0.1s ease-in-out;
 }
 
 .hero-img{
   width: 160px;
   height: 160px;
-  border-radius: 50%;
+  border-radius: 5px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -525,8 +544,8 @@ main h1{
 
 .contact_btns button{
   padding: 5px 15px;
-  border: 1px solid var(--text-muted);
-  background-color: var(--bg);
+  border: 1px solid #f5e9eb;
+  background-color: #ddd;
   color: var(--text);
   font-weight: bold;
   border-radius: 5px;
@@ -534,9 +553,9 @@ main h1{
 }
 
 .contact_btns button:hover{
-  background-color: #6c63ff;
+  background-color: #444444;
   color: var(--bg);
-  border: 1px solid #6c63ff;
+  /* border: 1px solid #6c63ff; */
   /* transform: scale(1.1); */
   transition: all 0.2s ease-in-out;
 }
