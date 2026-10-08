@@ -545,7 +545,7 @@ main h1{
 .contact_btns button{
   padding: 5px 15px;
   border: 1px solid #f5e9eb;
-  background-color: #ddd;
+  background-color: var(--bg);
   color: var(--text);
   font-weight: bold;
   border-radius: 5px;
